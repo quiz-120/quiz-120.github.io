@@ -81,7 +81,7 @@
           Open a website in an about:blank page so it doesn't show up in
           history!
           <a href="" id="macvgabout" style="color: var(--link)"
-            >Open MacVG in about:blank</a
+            >Open quiz-120 in about:blank</a
           >
         </p>
         <form id="cloaker">
@@ -120,6 +120,34 @@
           <button onclick="cyber()" class="clbtn">Cyberpunk</button>
           <button onclick="light()" class="clbtn">Light</button>
           <button
+
+             <h2>Enter Image URL to Change Background</h2>
+      <input type="text" id="bgUrl" placeholder="Enter image URL...">
+      <button onclick="changeBackground()">Go</button>
+  
+      <script>
+          // Function to load background from localStorage
+          function loadBackground() {
+              const savedBg = localStorage.getItem('backgroundImage');
+              if (savedBg) {
+                  document.body.style.backgroundImage = `url('${savedBg}')`;
+              } else {
+                  // Default background
+                  document.body.style.backgroundImage = "url('https://wallpapersmug.com/u/3f9733/mountains-landscape-retro-big-sunset-5k.jpg')";
+              }
+          }
+  
+          function changeBackground() {
+              const url = document.getElementById('bgUrl').value;
+              if (url) {
+                  document.body.style.backgroundImage = `url('${url}')`;
+                  localStorage.setItem('backgroundImage', url); // Save to localStorage
+              }
+          }
+  
+          // Load saved background when page loads
+          window.onload = loadBackground;
+      </script> 
             onclick="holidays()"
             class="clbtn"
             style="cursor: not-allowed; background-color: gray"
