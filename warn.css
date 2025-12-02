@@ -1,0 +1,25 @@
+.alert-banner {
+    /* Positioning and layout */
+    position: fixed; /* Fixes the banner to the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the banner is above other content */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding/border are included in the 100% width */
+
+    /* Styling */
+    background-color: #FFA500; /* A standard orange color */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+}
+
+/* Optional: Add padding to the body so content doesn't get hidden under the fixed banner */
+body {
+    padding-top: 45px; /* Adjust this value to the height of your alert banner */
+    margin: 0;
+}
