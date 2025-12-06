@@ -10,7 +10,7 @@
     box-sizing: border-box; /* Ensures padding/border are included in the 100% width */
 
     /* Styling */
-    background-color: #FFA500; /* A standard orange color */
+    background-color: orange; /* A standard orange color */
     color: white; /* White text for contrast */
     font-weight: bold;
     font-size: 14px;
