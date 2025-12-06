@@ -8,6 +8,7 @@
     padding: 10px 20px; /* Adjust padding as needed */
     text-align: center;
     box-sizing: border-box; /* Ensures padding/border are included in the 100% width */
+    scroll: yes;
 
     /* Styling */
     background-color: orange; /* A standard orange color */
